@@ -1,3 +1,12 @@
 function SkillsMember () {
-  this.skills = ['js', 'react', 'node', 'graphql'];
+  const member = {
+    name: 'John Doe',
+    age: 30
+  };
+
+  return {
+    getMember: function () {
+      return member;
+    }
+  };
 }
