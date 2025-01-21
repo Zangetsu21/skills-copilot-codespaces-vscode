@@ -1,9 +1,12 @@
-function SkillsMember () {
-  // Public methods
+function skillsMember() {
   return {
-    // Get member skills
-    getSkills: function (memberId) {
-      return Skills.find({memberId: memberId});
+    restrict: 'E',
+    templateUrl: 'modules/skills/views/member.html',
+    controller: 'SkillsMemberController',
+    controllerAs: 'vm',
+    bindToController: true,
+    scope: {
+      member: '='
     }
-  }
+  };
 }
