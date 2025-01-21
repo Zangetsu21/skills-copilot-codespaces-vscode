@@ -1,12 +1,9 @@
 function SkillsMember () {
-  const member = {
-    name: 'John Doe',
-    age: 30
-  };
-
+  // Public methods
   return {
-    getMember: function () {
-      return member;
+    // Get member skills
+    getSkills: function (memberId) {
+      return Skills.find({memberId: memberId});
     }
-  };
+  }
 }
